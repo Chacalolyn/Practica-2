@@ -37,7 +37,7 @@ public class PraticaApplication extends Application {
         configurableApplicationContext =
                 builder.run(getParameters().getRaw().toArray(new String[0]));
         FXMLLoader fxmlLoader = new
-                FXMLLoader(getClass().getResource("/fxml/asistencia_gui.fxml"));
+                FXMLLoader(getClass().getResource("/fxml/main_asistencia.fxml"));
         fxmlLoader.setControllerFactory(configurableApplicationContext::getBean);
         parent = fxmlLoader.load();
     }
